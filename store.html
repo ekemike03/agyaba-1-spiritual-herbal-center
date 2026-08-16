@@ -9,8 +9,8 @@ a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:aut
 header{position:sticky;top:0;z-index:50;background:rgba(18,63,43,.97);color:#fff;border-bottom:1px solid rgba(255,255,255,.12)}
 .nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:18px}
 .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.4px}
-.brand img{width:52px;height:52px;object-fit:contain;border-radius:50%;background:#fff}
-.brand span{max-width:240px;font-size:14px;line-height:1.2}
+.brand img{width:62px;height:62px;object-fit:cover;border-radius:50%;background:#fff;padding:3px;flex:0 0 62px;box-shadow:0 3px 10px rgba(0,0,0,.16)}
+.brand span{max-width:280px;font-size:14px;line-height:1.2}
 nav{display:flex;gap:18px;align-items:center}nav a{font-size:14px;font-weight:700;opacity:.92}nav a:hover{color:#f4d56b}
 .menu{display:none;background:none;border:1px solid rgba(255,255,255,.3);color:#fff;padding:8px 10px;border-radius:9px}
 .hero{padding:72px 0 58px;background:radial-gradient(circle at 15% 15%,#e6f0e7 0,#fbf8ef 42%,#f4efe0 100%)}
@@ -35,24 +35,24 @@ h2{font-size:clamp(30px,4vw,46px);line-height:1.08;margin:8px 0 12px;color:var(-
 footer{background:#0e2e20;color:#dbe7df;padding:42px 0 24px}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px}.footer-title{color:#fff;font-weight:900;margin-bottom:10px}footer a{display:block;margin:7px 0;color:#c7d5cd}
 .disclaimer{font-size:12px;color:#aebdb5;border-top:1px solid rgba(255,255,255,.12);margin-top:25px;padding-top:18px}
 .page-hero{padding:54px 0;background:linear-gradient(135deg,#123f2b,#1f6a46);color:#fff}.page-hero h1{color:#fff;font-size:clamp(38px,5vw,58px)}.page-hero p{color:#dbe8df;max-width:720px}
-.products{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.product .price{font-size:22px;font-weight:900;color:var(--green);margin:12px 0}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.product .price{font-size:22px;font-weight:900;color:var(--green);margin:12px 0}.product-image{width:100%;height:250px;object-fit:cover;border-radius:14px;display:block;margin-bottom:16px}.product-tag{display:inline-block;background:#e8f0e7;color:var(--green);padding:5px 9px;border-radius:999px;font-size:11px;font-weight:900;letter-spacing:.5px;margin-bottom:8px}.featured-product{border:2px solid #d6a928;box-shadow:0 12px 30px rgba(18,63,43,.10)}
 .form{max-width:760px;margin:auto;background:#fff;padding:28px;border-radius:20px;border:1px solid var(--line)}label{display:block;font-weight:800;color:var(--green);margin:14px 0 7px}input,select,textarea{width:100%;padding:13px;border:1px solid #d8d9d1;border-radius:10px;font:inherit;background:#fff}textarea{min-height:130px}
 .note{padding:16px;border-left:4px solid var(--gold);background:#fff8dc;border-radius:8px;margin:20px 0}
-@media(max-width:800px){nav{display:none}.menu{display:block}.nav.open nav{display:flex;position:absolute;left:0;right:0;top:74px;background:var(--green);padding:16px;flex-direction:column;align-items:flex-start}.hero-grid,.tuesday,.cta-box{grid-template-columns:1fr;display:grid}.grid,.products,.info,.footer-grid{grid-template-columns:1fr}.hero{padding-top:44px}.section{padding:54px 0}}
+@media(max-width:800px){.brand img{width:58px;height:58px;flex-basis:58px}.brand span{max-width:210px;font-size:13px}nav{display:none}.menu{display:block}.nav.open nav{display:flex;position:absolute;left:0;right:0;top:74px;background:var(--green);padding:16px;flex-direction:column;align-items:flex-start}.hero-grid,.tuesday,.cta-box{grid-template-columns:1fr;display:grid}.grid,.products,.info,.footer-grid{grid-template-columns:1fr}.hero{padding-top:44px}.section{padding:54px 0}}
 </style></head><body>
 <header><div class="container nav" id="nav">
 <a class="brand" href="index.html"><img src="logo.png" alt="Agyaba 1 logo"><span>AGYABA 1 SPIRITUAL & HERBAL CENTER</span></a>
 <button class="menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
 <nav>
-<a href="index.html">Home</a><a href="store.html">Store</a><a href="consultation.html">Consultation</a><a href="index.html#services">Services</a><a href="index.html#contact">Contact</a>
+<a href="index.html">Home</a><a href="about.html">About</a><a href="store.html">Store</a><a href="consultation.html">Consultation</a><a href="index.html#services">Services</a><a href="index.html#contact">Contact</a>
 </nav></div></header>
 
 <main><section class="page-hero"><div class="container"><div class="eyebrow" style="color:#f1d36a">AGYABA 1 STORE</div><h1>Herbal Store</h1><p>Explore our traditional herbal products and contact the center for current availability, prices and guidance.</p></div></section>
 <section class="section"><div class="container"><div class="note"><strong>Important:</strong> Product availability and prices can change. Please contact us before visiting to confirm stock and receive appropriate guidance. Herbal products should be used responsibly and should not replace professional medical care.</div>
 <div class="products">
+<div class="card product featured-product"><img src="spiritual-soap.png" alt="Agyaba 1 Spiritual Soap — Money, Favour, Lucky" class="product-image"><div class="product-tag">FEATURED PRODUCT</div><h3>Spiritual Soap — Money, Favour, Lucky</h3><p>Traditional spiritual soap presented by Agyaba 1 Spiritual & Herbal Center. Contact us for product details, availability and guidance before purchase.</p><div class="price">GHS 1,000</div><a class="btn btn-dark" href="https://wa.me/233248264007?text=Hello%20Agyaba%201%2C%20I%20want%20to%20order%20the%20Spiritual%20Soap." target="_blank">Order on WhatsApp</a></div>
 <div class="card product"><div class="icon">🌿</div><h3>Traditional Herbal Preparations</h3><p>Natural herbal preparations available from the center. Ask us about current options.</p><div class="price">Contact for price</div><a class="btn btn-dark" href="https://wa.me/233248264007?text=Hello%20Agyaba%201%2C%20I%20want%20to%20ask%20about%20your%20herbal%20products." target="_blank">Ask on WhatsApp</a></div>
-<div class="card product"><div class="icon">🍃</div><h3>Herbal Wellness Products</h3><p>Speak with our center about products suitable for your general wellness needs.</p><div class="price">Contact for price</div><a class="btn btn-dark" href="consultation.html">Request Guidance</a></div>
-<div class="card product"><div class="icon">🧴</div><h3>Special Preparations</h3><p>For specific enquiries, contact us directly so we can confirm availability and instructions.</p><div class="price">Contact for price</div><a class="btn btn-dark" href="tel:0248264007">Call the Center</a></div>
+<div class="card product"><div class="icon">🍃</div><h3>Herbal Wellness Products</h3><p>Speak with our center about products and traditional herbal guidance available at our center.</p><div class="price">Contact for price</div><a class="btn btn-dark" href="consultation.html">Request Guidance</a></div>
 </div></div></section>
 </main>
 

@@ -9,8 +9,8 @@ a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:aut
 header{position:sticky;top:0;z-index:50;background:rgba(18,63,43,.97);color:#fff;border-bottom:1px solid rgba(255,255,255,.12)}
 .nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:18px}
 .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.4px}
-.brand img{width:52px;height:52px;object-fit:contain;border-radius:50%;background:#fff}
-.brand span{max-width:240px;font-size:14px;line-height:1.2}
+.brand img{width:62px;height:62px;object-fit:cover;border-radius:50%;background:#fff;padding:3px;flex:0 0 62px;box-shadow:0 3px 10px rgba(0,0,0,.16)}
+.brand span{max-width:280px;font-size:14px;line-height:1.2}
 nav{display:flex;gap:18px;align-items:center}nav a{font-size:14px;font-weight:700;opacity:.92}nav a:hover{color:#f4d56b}
 .menu{display:none;background:none;border:1px solid rgba(255,255,255,.3);color:#fff;padding:8px 10px;border-radius:9px}
 .hero{padding:72px 0 58px;background:radial-gradient(circle at 15% 15%,#e6f0e7 0,#fbf8ef 42%,#f4efe0 100%)}
@@ -38,13 +38,13 @@ footer{background:#0e2e20;color:#dbe7df;padding:42px 0 24px}.footer-grid{display
 .products{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.product .price{font-size:22px;font-weight:900;color:var(--green);margin:12px 0}
 .form{max-width:760px;margin:auto;background:#fff;padding:28px;border-radius:20px;border:1px solid var(--line)}label{display:block;font-weight:800;color:var(--green);margin:14px 0 7px}input,select,textarea{width:100%;padding:13px;border:1px solid #d8d9d1;border-radius:10px;font:inherit;background:#fff}textarea{min-height:130px}
 .note{padding:16px;border-left:4px solid var(--gold);background:#fff8dc;border-radius:8px;margin:20px 0}
-@media(max-width:800px){nav{display:none}.menu{display:block}.nav.open nav{display:flex;position:absolute;left:0;right:0;top:74px;background:var(--green);padding:16px;flex-direction:column;align-items:flex-start}.hero-grid,.tuesday,.cta-box{grid-template-columns:1fr;display:grid}.grid,.products,.info,.footer-grid{grid-template-columns:1fr}.hero{padding-top:44px}.section{padding:54px 0}}
+@media(max-width:800px){.brand img{width:58px;height:58px;flex-basis:58px}.brand span{max-width:210px;font-size:13px}nav{display:none}.menu{display:block}.nav.open nav{display:flex;position:absolute;left:0;right:0;top:74px;background:var(--green);padding:16px;flex-direction:column;align-items:flex-start}.hero-grid,.tuesday,.cta-box{grid-template-columns:1fr;display:grid}.grid,.products,.info,.footer-grid{grid-template-columns:1fr}.hero{padding-top:44px}.section{padding:54px 0}}
 </style></head><body>
 <header><div class="container nav" id="nav">
 <a class="brand" href="index.html"><img src="logo.png" alt="Agyaba 1 logo"><span>AGYABA 1 SPIRITUAL & HERBAL CENTER</span></a>
 <button class="menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
 <nav>
-<a href="index.html">Home</a><a href="store.html">Store</a><a href="consultation.html">Consultation</a><a href="index.html#services">Services</a><a href="index.html#contact">Contact</a>
+<a href="index.html">Home</a><a href="about.html">About</a><a href="store.html">Store</a><a href="consultation.html">Consultation</a><a href="index.html#services">Services</a><a href="index.html#contact">Contact</a>
 </nav></div></header>
 
 <main><section class="page-hero"><div class="container"><div class="eyebrow" style="color:#f1d36a">PRIVATE & CONFIDENTIAL</div><h1>Consultation</h1><p>Tell us what you would like support with and our center will contact you about an appointment.</p></div></section>
